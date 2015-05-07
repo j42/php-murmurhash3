@@ -286,8 +286,8 @@ void MurmurHash3_x64_128 ( const void * key, const int len,
   uint64_t h1 = seed;
   uint64_t h2 = seed;
 
-  uint64_t c1 = BIG_CONSTANT(0x87c37b91114253d5);
-  uint64_t c2 = BIG_CONSTANT(0x4cf5ad432745937f);
+  const uint64_t c1 = BIG_CONSTANT(0x87c37b91114253d5);
+  const uint64_t c2 = BIG_CONSTANT(0x4cf5ad432745937f);
 
   //----------
   // body
@@ -357,4 +357,3 @@ void MurmurHash3_x64_128 ( const void * key, const int len,
 }
 
 //-----------------------------------------------------------------------------
-
